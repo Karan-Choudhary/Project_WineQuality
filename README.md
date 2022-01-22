@@ -38,3 +38,18 @@ add to git and commit
 git add .
 git commit -m "Your commit"
 ```
+
+add remote repository
+```bash
+git remote add origin https://url
+```
+
+change branch name from master to main
+```bash
+git branch -M main
+```
+
+push changes to github
+```bash
+git push origin main
+```
