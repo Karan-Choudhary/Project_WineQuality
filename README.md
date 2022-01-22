@@ -32,3 +32,9 @@ dvc init
 ```bash
 dvc add -R data_given
 ```
+
+add to git and commit
+```bash
+git add .
+git commit -m "Your commit"
+```
