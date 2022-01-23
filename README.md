@@ -53,3 +53,29 @@ push changes to github
 ```bash
 git push origin main
 ```
+
+tox command -
+```bash
+tox
+```
+
+for rebuild
+```bash
+tox -r
+```
+
+pytest command -
+```bash
+pytest -v
+```
+
+setup command-
+```bash
+pip install -e .
+```
+
+build your own package commands-
+```bash
+pip install wheel
+python setup.py sdist bdist_wheel
+```
