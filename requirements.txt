@@ -10,3 +10,5 @@ numpy
 joblib
 pytest
 tox
+Flask
+gunicorn
