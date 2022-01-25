@@ -79,3 +79,10 @@ build your own package commands-
 pip install wheel
 python setup.py sdist bdist_wheel
 ```
+
+mlflow server command
+
+mlflow server \
+        --backend-store-uri sqlite:///mlflow-db.db \
+        --default-artifact-root ./artifacts \
+        --host 0.0.0.0 -p 1234
