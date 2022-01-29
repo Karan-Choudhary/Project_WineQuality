@@ -1,81 +1,45 @@
-create env
+## WineQauality
+Wine Quality is a popular dataset for learning Machine Learning algos.</br>
+Using wine quality dataset, I implemented it as a MLOps project.
 
-```bash
-python3 -m venv /path/to/new/virtual/environment
+Created a pipeline to reproduce and tracking the model and results.
+
+Used majorly to learn:
+1. [DVC (Data Version Control)](https://dvc.org/)
+2. [mlflow](https://mlflow.org/)
+
+## Deployed on:
+* Heroku
+
+## Follows:
+* Continuous Integration and Continuous Deployment
+* Retraining Approachs
+
+
+## Requirements:
+requirements.txt
+
+for installation
 ```
-
-activate env
-```bash
-source /path/to/new/virtual/environment/Scripts/activate
-```
-
-install requirements
-```bash
 pip install -r requirements.txt
 ```
 
-run template.py file for creating basic structure
-```bash
-python template.py
+## For reproducing same results as mine use command:
+```
+dvc repro
 ```
 
-initialize git
-```bash
-git init
-```
-initialize dvc
-```bash
-dvc init
-```
- 
- add data to dvc
-```bash
-dvc add -R data_given
-```
+## Testing done with:
+* [tox](https://tox.wiki/en/latest/)
 
-add to git and commit
-```bash
-git add .
-git commit -m "Your commit"
-```
+## Parameters present in:
+* [params.yaml](https://github.com/Karan-Choudhary/Project_WineQuality/blob/main/params.yaml)
 
-add remote repository
-```bash
-git remote add origin https://url
-```
+## DVC and mlflow configuration present in:
+* [dvc.yaml](https://github.com/Karan-Choudhary/Project_WineQuality/blob/main/dvc.yaml)
 
-change branch name from master to main
-```bash
-git branch -M main
-```
+## Recommendation:
+Please create new [virtual environment](https://docs.python.org/3/library/venv.html) before use.
 
-push changes to github
-```bash
-git push origin main
-```
-
-tox command -
-```bash
-tox
-```
-
-for rebuild
-```bash
-tox -r
-```
-
-pytest command -
-```bash
-pytest -v
-```
-
-setup command-
-```bash
-pip install -e .
-```
-
-build your own package commands-
-```bash
-pip install wheel
-python setup.py sdist bdist_wheel
-```
+## Warning:
+Do not try to edit dvc.lock file and .tox directory
